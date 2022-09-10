@@ -30,5 +30,5 @@ document.getElementById("e").addEventListener("click", function onClick() {
     result.innerHTML = res;
 });
 document.getElementById("b").addEventListener("click", function onClick() {
-    result.innerHTML = result.innerHTML.slice(0)
+    result.innerHTML = result.innerHTML.slice(-2,-1)
 });
