@@ -1,7 +1,7 @@
 const body = document.getElementById("body");
 let question = "";
 const result = document.getElementById("result");
-const operatorButtonIds = ["btn-plus", "btn-minus", "btn-times", "btn-divide", "btn-mod"];
+const operatorButtonIds = ["btn-plus", "btn-minus", "btn-times", "btn-divide", "btn-mod", "btn-bracket-open", "btn-bracket-close"];
 let lastOperation = null;
 const operator_map = {
     "+": "+",
@@ -9,7 +9,9 @@ const operator_map = {
     "x": "*",
     "÷": "/",
     "%": "%",
-}
+    "(": "(",
+    ")": ")"
+};
 
 for (let i = 0; i < 10; i++) {
     document.getElementById(`btn-${i}`).addEventListener("click", function (e) {
@@ -23,7 +25,7 @@ for (let i = 0; i < 10; i++) {
     }
     )
 }
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 7; i++) {
     document.getElementById(operatorButtonIds[i]).addEventListener("click", function (e) {
 
         question = question + operator_map[e.target.innerHTML];
