@@ -1,0 +1,19 @@
+{
+  "name": "js-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build:css": "npx tailwind build -i src/main.css -o dist/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah-coder2013/JsCalc.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdullah-coder2013/JsCalc/issues"
+  },
+  "homepage": "https://github.com/Abdullah-coder2013/JsCalc#readme"
+}

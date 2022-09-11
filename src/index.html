@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="../dist/tailwind.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body id="body">
+    <div id="main">
+
+        <div id="buttons" class="grid grid-cols-4 gap-4 border-2 border-slate-700 bg-slate-600 rounded-xl p-2">
+            <input type="text" name="submit" id="result" class="col-span-4 mt-2 mb-2 rounded-xl p-4 text-xl" placeholder="">
+            <button type="button" id="btn-1"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">1</button>
+            <button type="button" id="btn-2"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">2</button>
+            <button type="button" id="btn-3"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">3</button>
+            <button type="button" id="btn-4"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">4</button>
+            <button type="button" id="btn-5"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">5</button>
+            <button type="button" id="btn-6"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">6</button>
+            <button type="button" id="btn-7"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">7</button>
+            <button type="button" id="btn-8"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">8</button>
+            <button type="button" id="btn-9"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">9</button>
+            <button type="button" id="btn-0"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg">0</button>
+            <button type="button" id="btn-plus"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg">+</button>
+            <button type="button" id="btn-minus"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg">-</button>
+            <button type="button" id="btn-times"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg">x</button>
+            <button type="button" id="btn-divide"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg">÷</button>
+            <button type="button" id="btn-mod"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg">%</button>
+            <button type="button" id="b"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg"><img src="backspace.svg" alt="backspace"></button>
+            <button type="button" id="c"class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg">C</button>
+            <button type="button" id="e"class="bg-sky-400 hover:bg-sky-500 active:bg-sky-700 rounded-xl border-slate-700 text-lg">=</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
