@@ -1,10 +1,7 @@
 const body = document.getElementById("body");
 let question = "";
 const result = document.getElementById("result");
-const canUseOperator = true;
 const operatorButtonIds = ["btn-plus", "btn-minus", "btn-times", "btn-divide", "btn-mod"];
-const operators = ["+", "-", "*", "/", "%"];
-const show_op = ["+", "-", "x", "÷", "%"];
 let lastOperation = null;
 const operator_map = {
     "+": "+",
