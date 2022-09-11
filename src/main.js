@@ -26,7 +26,7 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < 5; i++) {
     document.getElementById(operatorButtonIds[i]).addEventListener("click", function (e) {
 
-        question = question + e.target.innerHTML;
+        question = question + operator_map[e.target.innerHTML];
         result.value = result.value + e.target.innerHTML;
         lastOperation = operator_map[e.target.innerHTML];
     })
