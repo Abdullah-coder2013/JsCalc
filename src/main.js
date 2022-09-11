@@ -35,7 +35,7 @@ for (let i = 0; i < 5; i++) {
     })
 }
 document.getElementById("c").addEventListener("click", function onClick() {
-    result.innerHTML = "";
+    result.value = "";
     question = "";
     canUseOperator = true;
 });
