@@ -50,3 +50,17 @@ document.getElementById("b").addEventListener("click", function onClick() {
     result.value = question
 
 });
+
+document.getElementById("result").addEventListener("keypress", function(e) {
+    if (e.key == "Enter") {
+        run();
+    }
+});
+
+function run() {
+    let resultt = eval(result.value);
+    console.log(resultt);
+    result.value = resultt;
+    lastOperation = "=";
+    question = resultt;
+}
