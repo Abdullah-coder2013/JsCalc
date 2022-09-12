@@ -36,14 +36,13 @@ for (let i = 0; i < 7; i++) {
 document.getElementById("c").addEventListener("click", function onClick() {
     result.value = "";
     question = "";
-    canUseOperator = true;
 });
 document.getElementById("e").addEventListener("click", function onClick() {
     var res = eval(question);
     console.log(res);
     result.value = res;
     question = res;
-    lastOperation = "="
+    lastOperation = "=";
 });
 
 document.getElementById("b").addEventListener("click", function onClick() {
