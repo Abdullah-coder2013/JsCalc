@@ -5,6 +5,9 @@
 button {
     padding: 25px;
 }
+#dot, #e {
+    padding: 6.5px;
+}
 
 button:hover {
     background-color: gray;

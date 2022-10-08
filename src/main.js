@@ -45,6 +45,12 @@ document.getElementById("e").addEventListener("click", function onClick() {
     lastOperation = "=";
 });
 
+document.getElementById("dot").addEventListener("click", function onClick(e) {
+  question = question + e.target.innerHTML;
+  result.value = result.value + e.target.innerHTML;
+  lastOperation = e.target.innerHTML;
+});
+
 document.getElementById("b").addEventListener("click", function onClick() {
     question = question.substring(0, question.length - 1)
     result.value = question
@@ -59,7 +65,7 @@ document.getElementById("result").addEventListener("keypress", function(e) {
 
 function run() {
     let resultt = eval(result.value);
-    console.log(resultt);
+    console.log(result.value + resultt);
     result.value = resultt;
     lastOperation = "=";
     question = resultt;
