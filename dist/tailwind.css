@@ -623,6 +623,14 @@ video {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -716,6 +724,10 @@ video {
   padding: 1rem;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -802,6 +814,14 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+
 button {
   padding: 25px;
 }
@@ -818,15 +838,15 @@ button:active {
   background-color: black;
 }
 
-#main {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  height: 880px;
-  align-items: center;
-}
+/* #main {
+    display: flex;
+    width: 660px;
+    justify-content: center;
+    height: 660px;
+    align-items: center;
+} */
 
-#buttons {
+#calculator {
   justify-content: center;
   width: 353px;
 }
