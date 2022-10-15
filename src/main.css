@@ -27,6 +27,7 @@ button:active {
 
 #buttons {
     justify-content: center;
+    width: 353px;
 }
 #btn-1,
 #btn-2,
