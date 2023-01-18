@@ -64,9 +64,14 @@ document.getElementById("result").addEventListener("keypress", function(e) {
 });
 
 function run() {
-    let resultt = eval(result.value);
-    console.log(result.value + resultt);
-    result.value = resultt;
-    lastOperation = "=";
-    question = resultt;
-}
+    try {
+        let resultt = eval(result.value);
+        console.log(result.value + resultt);
+        result.value = resultt;
+        lastOperation = "=";
+        question = resultt; 
+    }
+    catch (e) {
+        console.log(e.message);
+    }
+    }
